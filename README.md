@@ -42,10 +42,35 @@ retrieve the following:
 * kgdb-pci-kernel (from <https://github.com/johnhubbard/kgdb-pci-kernel>)
 * kgdb-pci-gdb    (from <https://github.com/johnhubbard/kgdb-pci-gdb>)
 
+Detailed steps
+--------------
+
+    git clone git@github.com:johnhubbard/kgdb-pci-kernel.git
+    git clone git@github.com:johnhubbard/kgdb-pci-gdb.git
+
+    cd kgdb-pci-kernel
+    git checkout origin/kgdb-pci-1.0
+    (...configure, make, install...)
+    cd ..
+
+    cd kgdb-pci-gdb
+    git checkout origin/kgdb-pci-1.0
+    (...configure, make, install...)
+
 It was set up that way in order to avoid complicated git arrangements, such
 as git submodules. This way, each project is maintained with normal git
 commands. The only downside is that one must go out and retrieve the two
 above projects.
+
+Coming soon
+-----------------
+
+The tentative plan is to use this kgdb-pci repository as a place to put
+patches for various versions of Linux kernel and gdb, as a convenience to
+those who are not working with the very latest versions of those projects.
+
+There is some time required, in order to provide a working patch set for each
+major version of the kernel and gdb.
 
 Enjoy!
 John F. Hubbard
