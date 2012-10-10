@@ -62,6 +62,14 @@ as git submodules. This way, each project is maintained with normal git
 commands. The only downside is that one must go out and retrieve the two
 above projects.
 
+Be sure to ...
+----------------
+
+This is listed (OK, buried) in Documentation/kernel-parameters.txt, but
+you'll probably want to add the following to your kernel boot arguments:
+
+    kgdbpci=all
+
 Coming soon
 -----------------
 
