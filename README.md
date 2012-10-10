@@ -49,12 +49,12 @@ Detailed steps
     git clone git@github.com:johnhubbard/kgdb-pci-gdb.git
 
     cd kgdb-pci-kernel
-    git checkout origin/kgdb-pci-1.0
+    git checkout -b kgdb-pci-1.0 origin/kgdb-pci-1.0
     (...configure, make, install...)
     cd ..
 
     cd kgdb-pci-gdb
-    git checkout origin/kgdb-pci-1.0
+    git checkout -b kgdb-pci-1.0 origin/kgdb-pci-1.0
     (...configure, make, install...)
 
 It was set up that way in order to avoid complicated git arrangements, such
